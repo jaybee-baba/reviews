@@ -27,6 +27,12 @@ function App() {
     }
   }
 
+  const generateRandom = () =>{
+      console.log(index)
+      setIndex( Math.floor(Math.random() * (reviews.length)));
+    
+  }
+
 
   useEffect(() => {
     setReview(reviews[index]);
@@ -38,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Review changeReview = {changeReview} review={review}/>
+      <Review changeReview = {changeReview} review={review} generateRandom = {generateRandom}/>
     </div>
   );
 }

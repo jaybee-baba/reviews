@@ -70,12 +70,14 @@ hr{
 
 
 .name{
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1.2em;
 }
 
 .job{
   font-weight: 400;
-  color: teal
+  color: teal;
+  font-size: 12px;
 }
 
 .text{
